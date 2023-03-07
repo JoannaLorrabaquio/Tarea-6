@@ -1,0 +1,69 @@
+public class Lampara {
+
+	//Atributos
+        	private String color;
+    		private double precio;
+		private boolean encendida;
+        
+	// Constructor por defecto
+
+    	public Lampara() {
+        	this.color = "";
+        	this.precio = 0.0;
+		this.encendida = false;
+    	}
+
+	// Constructor sobrecargado
+    	public Lampara(String color, Double precio, Boolean encedida) {
+        	this.color = color;
+        	this.precio = precio;
+		this.encendida = encendida;
+    	}
+
+
+	// Metodos de acceso
+
+    	public String getColor() {
+        	return color;
+    	}
+
+    	public void setColor(String color) {
+        	this.color = color;
+    	}
+ 
+
+    	public double getPrecio() {
+        	return precio;
+    	}
+
+    	public void setPrecio(double precio) {
+        	this.precio = precio;
+    	}
+
+	public boolean isEncendida() {
+        	return encendida;
+    	}
+
+	public void setEncendida(boolean encendida) {
+        	this.encendida = encendida;
+	}
+
+
+	// Método toString
+    	
+	@Override
+    	public String toString() {
+        	return "Lampara [color=" + color + ", precio=" + precio + "]";
+    	}
+
+	// Métodos de uso general
+    	
+	public void prender() {
+        	System.out.println("La lampara se ha prendido.");
+    	}
+
+    	public void apagar() {
+        	System.out.println("La lampara se ha apagado.");
+    	}
+	
+}
